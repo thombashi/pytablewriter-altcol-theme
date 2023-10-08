@@ -48,6 +48,8 @@ Usage
         )
         writer.write_table()
 
+You can change the color of the theme by using the ``color`` parameter:
+
 :Sample Code:
     .. code-block:: python
 
@@ -67,6 +69,11 @@ Usage
         writer.set_theme("altcol", color="yellow")
 
         writer.write_table()
+
+
+Other Examples
+--------------------------------------------
+- Generate HTML example: `source file <https://github.com/thombashi/pytablewriter-altcol-theme/blob/master/examples/write_html.py>`__ and `the output <https://thombashi.github.io/pytablewriter-altcol-theme/example.html>`__
 
 
 Dependencies
