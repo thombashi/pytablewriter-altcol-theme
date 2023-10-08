@@ -40,12 +40,8 @@ setuptools.setup(
     url=REPOSITORY_URL,
     author=pkg_info["__author__"],
     author_email=pkg_info["__email__"],
-    description=dedent(
-        """\
-        ``pytablewriter-altcol-theme`` is a
-        `pytablewriter <https://github.com/thombashi/pytablewriter>`__ plugin to
-        provide a terminal theme.
-        """
+    description=(
+        "pytablewriter-altcol-theme is a pytablewriter plugin to provide a terminal theme."
     ),
     include_package_data=True,
     keywords=[
