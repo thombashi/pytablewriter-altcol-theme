@@ -29,6 +29,9 @@ def style_filter(cell: Cell, **kwargs: Any) -> Optional[Style]:
         fg_color = color
 
     if fg_color or bg_color:
-        return Style(color=fg_color, bg_color=bg_color)
+        if cell.is_header_row():
+            return Style(color=fg_color, bg_color=bg_color, align="center")
+        else:
+            return Style(color=fg_color, bg_color=bg_color)
 
     return None
