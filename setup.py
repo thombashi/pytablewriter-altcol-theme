@@ -45,8 +45,8 @@ setuptools.setup(
     ),
     include_package_data=True,
     keywords=[
-        "pytablewriter",
         "plugin",
+        "pytablewriter",
         "theme",
     ],
     license=pkg_info["__license__"],
