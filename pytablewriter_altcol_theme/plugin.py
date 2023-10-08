@@ -21,12 +21,14 @@ def style_filter(cell: Cell, **kwargs: Any) -> Optional[Style]:
     bg_color: Optional[Color] = None
 
     color = Color(kwargs.get("color", DEFAULT_COLOR))
+    other_color = _calc_other_ground_color(color)
 
     if cell.col % 2 == 0:
-        fg_color = _calc_other_ground_color(color)
+        fg_color = other_color
         bg_color = color
     else:
         fg_color = color
+        bg_color = other_color
 
     if fg_color or bg_color:
         if cell.is_header_row():
