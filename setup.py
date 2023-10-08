@@ -6,7 +6,7 @@ import setuptools
 
 
 MODULE_NAME = "pytablewriter_altcol_theme"
-REPOSITORY_URL = "https://github.com/thombashi/{:s}".format(MODULE_NAME)
+REPOSITORY_URL = f"https://github.com/thombashi/{MODULE_NAME:s}"
 REQUIREMENT_DIR = "requirements"
 ENCODING = "utf8"
 
